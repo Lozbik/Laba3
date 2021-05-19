@@ -8,23 +8,57 @@
                 <ins>Резюме</ins>          
             </h1>
             </div>
-    </head>
-    <body>
-        <div>
-            <div
-                class="Name">
-                <h1>
-                    <i>Пискунов</i> <br>
-                    <i>Максим</i> <br>
-                    АДБ-18-08
-                </h1>
-            </div> 
-            <div
-                class= "Photo">
-                <img src="https://avatars.mds.yandex.net/get-zen_doc/1582174/pub_5cd9dbe10de4a600b3dadd7e_5cd9de795a6e0400b34f7538/scale_1200" width="300" height="300">
+        <title>Вывод изображения на HTML страницу </title>
+        <style>
+            .TextAbout1{width: 800px; font-size: 20px; flex: 1 1 auto;}
+            
+            .Base{
+                margin-top: 0px;
+                display: flex;
+                justify-content: center;
 
+                background-size: cover; 
+                -moz-background-size: cover; 
+                -o-background-size: cover; 
+                -webkit-background-size: cover;
+                }
+            h1{text-align: center;text-shadow: 4px 3px 0px rgb(28, 7, 216), 9px 8px 0px rgba(5, 247, 45, 0.137);}
+            .InPut{text-align: center; margin-right: 820px;}
+            .Info:hover{color: #0ba8d8e5}
+            .ButtonChgColor{margin-left: 800px;  position: relative; bottom: 100px;}
+        </style>
+        
+    </head>
+    <body background="Fon.jpg">
+            <div class="Base">
+                <img src="https://avatars.mds.yandex.net/get-zen_doc/1582174/pub_5cd9dbe10de4a600b3dadd7e_5cd9de795a6e0400b34f7538/scale_1200" width="300" height="300" 
+                />
+                <big style="font-size: 40px">
+                    <div class="Info">
+                        <i id="SurName">Пискунов</i>
+                        <i id="Name">Максим</i> <br>
+                        АДБ-18-08
+                    </div>                    
+                    <div class="TextAbout1">
+                        <p id="Text1"> 
+                            Когда речь заходит о том, кого считать первым парнем на деревне и самым завидным женихом, невольно вспоминается Пискунов Максим.
+                            По мнению русского философа Александра Секацкого, Максим был не только центром любого деревенского гулянья и предметом воздыханий местных красавиц. Он ещё и провокатор, способный создать нужный настрой перед дракой.                
+                            Как начнет «задиристую» – аж дрожь берет. Как тут не выплеснуть молодецкую удаль? А Максим – всегда впереди. Вокруг него – вся сельская молодежь, и в нужный момент он с лёгкостью «из искры раздувает пламя». Какая же девка устоит перед такими лидерскими качествами?
+                        </p>
+                    </div> 
+                </big>
+                <br>                                     
+            </div>     
+            <div class="InPut">
+                <p>Введите фамилию: <input type="text" id="userSurname" size="20" /></p>
+                <p>Введите имя: <input type="text" id="userName" value="" size="20" /></p>
+                <button type="button" onclick="ChangeName()">Изменить</button> 
             </div>
-        </div>
+            <div class="ButtonChgColor">
+                <button type="button" style="height:100px;width:100px" onclick="ChangeColor()">Изменить цвет шрифта</button> 
+            </div>
+            <script src="kod.js">
+            </script>
     </body>
     <style>
 
